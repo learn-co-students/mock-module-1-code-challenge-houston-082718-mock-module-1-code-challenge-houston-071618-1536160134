@@ -9,6 +9,6 @@ book_4 = Book.new("Book title B2","AuthorB", 2500)
 author_1 = Author.new("AuthorA")
 author_2 = Author.new("AuthorB")
 
-#binding.pry
+binding.pry
 
 

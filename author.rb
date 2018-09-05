@@ -6,9 +6,10 @@
 
 class Author
   attr_accessor :name
-  @@author_total_words = {}
+  @@authors = []
   def initialize(name)
     @name = name
+    @@authors << self
   end
 
   def books
@@ -24,18 +25,19 @@ class Author
     self.books.each do |books|
       total +=books.word_count
     end
-    @@author_total_words = {self: total}
     total
   end
 
   def self.most_words
     most_words = 0
-    author_most_words = Author.new("Replace me with author with most words")
-    @@author_total_words.each do |author,total_words|
-      if total_words > most_words
-        @@author_total_words[author]
+    author_most_words = nil
+    @@authors.each do |author|
+      if author.total_words > most_words
+        most_words = author.total_words
+        author_most_words = author
       end
     end
+    author_most_words
   end
 
 end
