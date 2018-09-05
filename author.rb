@@ -37,9 +37,11 @@ class Author
       book.word_count
     }.sort.reverse[0]
 
-    # Book.all.select { |book|
-    #   book.author.word_count == count
-    #   return book.author
-    # }
+    Book.all.select { |book|
+    if book.word_count == count
+      return book.author
+    end
+    }
   end
+
 end
