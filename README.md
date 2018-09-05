@@ -24,7 +24,7 @@ The point of a code challenge is **NOT** to:
 
 _Do not expect every module to have a mock version of the code challenge. We are providing an example for the first module only as a way to familiarize you with the feel and structure of our code challenges. We want to remove some of the stress leading up to the first code challenge so that the results can be more indicative of what you have learned and less about how you may handle 'exam stress'.  Generally, we are careful not to 'teach to the test' and while we will be able to indicate what are the main areas to focus on we will not provide an example version of the code challenge_
 
-The information below is what you might expect to see when taking a new code challenge. One point of note is that the code challenges _will not have tests_.  This is intentional. It is really important to practice writing and running code outside of the framework of the labs and tests. 
+The information below is what you might expect to see when taking a new code challenge. One point of note is that the code challenges _will not have tests_.  This is intentional. It is really important to practice writing and running code outside of the framework of the labs and tests.
 
 ## Topics
 
@@ -45,26 +45,25 @@ We've provided you with a console that you can use to test your code. To enter a
 ### `Book`
 Build the following methods on the Book class
 
-- `Book.all`
+X - `Book.all`
 should return all of the books
-- `Book#author`
+X - `Book#author`
 should return the author instance who wrote this book
-- `Book#title`
+X - `Book#title`
 should return the title of the book
-- `Book#word_count`
+X - `Book#word_count`
 should return the number of words in the book
 
 ### `Author`
 Build the following methods on the Author class
 
-- `Author.all`
+X - `Author.all`
 should return all of the authors
-- `Author#books`
+X - `Author#books`
 should return all of the books an author has written
-- `Author#write_book`
+X - `Author#write_book`
 should take arguments of a title and word count and make a new Book instance associated with this author
-- `Author#total_words`
+X - `Author#total_words`
 should return the total number of words that author has written across all of their authored books.
 - `Author.most_words`
 should return the author instance who has written the most words
-
